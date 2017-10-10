@@ -6,7 +6,7 @@ public class Gumballl4achineTestDrive {
 			GumballMachine gumballMachine = new GumballMachine(5);
 					
 			System.out.println (gumballMachine);
-			
+		/*	
 			gumballMachine.insertQuarter();
 			gumballMachine.turnCrank();
 			
@@ -34,7 +34,7 @@ public class Gumballl4achineTestDrive {
 			gumballMachine.insertQuarter();
 			gumballMachine.turnCrank ();
 			System.out.println(gumballMachine);
-	
+	   */
 	
 	}
 	}

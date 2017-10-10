@@ -39,7 +39,7 @@ public class GumballMachine {
 	} else if (state == SOLD_OUT) {
 	System.out.println("You can’t e]ect, you haven’t inserted a quarter yet");
 }
-	}
+}
 	
 	public void turnCrank() {
 	if (state == SOLD) {
@@ -52,8 +52,8 @@ public class GumballMachine {
 	System.out.println("You turned...");
 	state = SOLD; 
 	dispense();
-	}
-    }
+}
+}
 
 	public void dispense () {
 	     if (state == SOLD){
@@ -72,10 +72,24 @@ public class GumballMachine {
     } else if (state == HAS_QUARTER){
 	System.out.println("No gumball dispensed");
 	// other methods here like toString() and refill()
-    }
-	     }
+}
+}
 	
-	
+	public String toString(){
+		String status = "Gumball Machine";
+		if(state == HAS_QUARTER){
+			status = status+"\n status : HAS_QUARTER";
+		} else if(state == NO_QUARTER){
+		    status = status+"\n status : NO_QUARTER";
+		} else if(state == SOLD){
+			status = status+"\n status :  SOLD";
+        } else if(state == SOLD_OUT){
+        	status = status+"\n status :  SOLD_OUT";
+        }
+		status = status+"\n status : "+this.count;
+		
+		return status;
+	}
 	
 	
 }
