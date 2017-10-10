@@ -32,6 +32,7 @@ public class GumballMachine {
 	public void ejectQuarter() {
 	if (state == HAS_QUARTER) { 
 	System.out.println("Quarter returned"); 
+	 state = NO_QUARTER;
 	} else if (state == NO_QUARTER) {
 	System.out.println("You haven’t inserted a quarter"); 
 	} else if (state == SOLD) {
@@ -86,7 +87,7 @@ public class GumballMachine {
         } else if(state == SOLD_OUT){
         	status = status+"\n status :  SOLD_OUT";
         }
-		status = status+"\n status : "+this.count;
+		status = status+"\n count : "+this.count;
 		
 		return status;
 	}
